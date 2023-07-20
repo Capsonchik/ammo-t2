@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "AmmoSRM",
+  "name": "Ammo test site",
   "icons": [
     {
       "src": "favicon.ico",
