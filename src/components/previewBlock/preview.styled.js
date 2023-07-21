@@ -5,7 +5,7 @@ export const StyledPreview = styled.section`
   padding-top: 297px;
   padding-bottom: 250px;
   
-  & p {
+  .text {
     color: #999;
     font-size: 18px;
     font-style: normal;
