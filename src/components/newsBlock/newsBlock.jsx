@@ -2,6 +2,7 @@ import {StyledNewsBlock} from "./newsBlock.styled";
 import {Content, MainHeader} from "../globalStyled/global.styled";
 import {Title} from "../title/title";
 import {TopCard} from "../newsCards/topCard/topCard";
+import {NewsCard} from "../newsCards/newsCard/newsCard";
 
 export const NewsBlock = ({topNews, newsList}) => {
   const date = new Date();
@@ -20,7 +21,9 @@ export const NewsBlock = ({topNews, newsList}) => {
           <div className="topNews">
             <TopCard topNews={topNews} date={formattedDate}/>
           </div>
-          <div className="news"></div>
+          <div className="news">
+            {newsList.map((news) => <NewsCard key={news.id} news={news} date={formattedDate}/>)}
+          </div>
         </div>
       </Content>
     </StyledNewsBlock>

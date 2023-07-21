@@ -27,9 +27,17 @@ export const StyledNewsBlock = styled.section`
   .newsList {
     margin-top: 68px;
     display: flex;
+    justify-content: space-between;
   }
   
   .topNews {
     width: 49%;
+  }
+  
+  .news {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 `
