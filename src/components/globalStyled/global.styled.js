@@ -5,10 +5,11 @@ export const Content = styled.div`
   margin: 0 auto;
 `
 
-export const Title = styled.span`
-  color: #57B8FF;
-  font-size: 16px;
+export const MainHeader = styled.h2`
+  color: #FFF;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  margin-top: 22px;
 `
