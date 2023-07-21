@@ -1,8 +1,13 @@
 import {StyledNewsBlock} from "./newsBlock.styled";
 import {Content, MainHeader} from "../globalStyled/global.styled";
 import {Title} from "../title/title";
+import {TopCard} from "../newsCards/topCard/topCard";
 
-export const NewsBlock = () => {
+export const NewsBlock = ({topNews, newsList}) => {
+  const date = new Date();
+  const options = { month: 'long', day: 'numeric', year: 'numeric' };
+  const formattedDate = date.toLocaleDateString('en-US', options);
+
   return(
     <StyledNewsBlock>
       <Content>
@@ -12,7 +17,9 @@ export const NewsBlock = () => {
           <button className={'newsBtn'}>read more</button>
         </div>
         <div className="newsList">
-          <div className="topNews"></div>
+          <div className="topNews">
+            <TopCard topNews={topNews} date={formattedDate}/>
+          </div>
           <div className="news"></div>
         </div>
       </Content>

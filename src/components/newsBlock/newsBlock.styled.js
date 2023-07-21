@@ -23,4 +23,13 @@ export const StyledNewsBlock = styled.section`
     align-self: end;
     font-family: Orbitron;
   }
+  
+  .newsList {
+    margin-top: 68px;
+    display: flex;
+  }
+  
+  .topNews {
+    width: 49%;
+  }
 `
