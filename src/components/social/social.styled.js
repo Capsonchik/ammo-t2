@@ -7,7 +7,7 @@ export const StyledSocial = styled.div`
   top: 0;
   left: 5px;
   width: 300px;
-  margin: 470px -57px;
+  margin: 470px -30px;
   
   .text {
     color: #80858F;
